@@ -1,0 +1,55 @@
+/* Import Tailwind base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Optional: global CSS resets or base tweaks */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background-color: #fafafa; /* Light gray background */
+  color: #111827; /* Dark text */
+  font-size: 13px;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  }
+.anima-font{
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+}
+body{
+  padding: 10px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+.post-container{
+  width: 50vw;
+  
+}
+.sidebar-container{
+  width: 20vw;
+}
+.right-bar{
+  width: 30vw;
+}
+@media  screen and (max-width:800px) {
+  .post-container{
+    width: 100vw;
+  }
+  .sidebar,.right-bar{
+    display: none;
+  }
+}
+div::focus-visible{
+  outline: none !important;
+}

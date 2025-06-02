@@ -1,0 +1,22 @@
+
+.svg-button{
+  cursor: pointer;
+}
+.svg-button:hover{
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+}
+/* .banner-block{
+  background-color:#ffffff;
+background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23af9fc9' fill-opacity='0.48' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+} */
+ .app-title{
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+ }
+ .admin-left-bar>div{
+  width: 20vw;
+ }
+ .admin-main-bar{
+  width: 50vw;
+ }
