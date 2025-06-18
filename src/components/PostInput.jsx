@@ -1,10 +1,10 @@
 import React from 'react'
 
-function PostInput() {
+function PostInput(props) {
   return (
     <div className='bg-blue-100 rounded-md p-4 banner-block'>
         <div className="flex gap-2 mb-1">
-        <h4 className='text-xl'>Hey</h4><span className='text-xl'>Stephan ! </span>
+        <h4 className='text-xl'>Hey</h4><span className='text-xl'>{props.user_name} ! </span>
         </div>
         <p className='mb-4 mt-4'>Do you wish to write something today?</p>
         <div className='h-40 bg-white rounded-md p-2'
@@ -12,7 +12,7 @@ function PostInput() {
             <p className='text-sm text-gray-500'>Write Your Thoughts Away :)</p>
             <svg xmlns="http://www.w3.org/2000/svg" 
             style={{top:"176px",
-                left:"330px"}}
+                left:"729px"}}
             className='absolute w-64' viewBox="0 0 1440 320"><path fill="#dbe9fe" fill-opacity="1" d="M0,0L60,48C120,96,240,192,360,234.7C480,277,600,267,720,224C840,181,960,107,1080,90.7C1200,75,1320,117,1380,138.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
             <div className='p-2 relative flex gap-1 items-center top-20'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 svg-button">

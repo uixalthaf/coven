@@ -5,7 +5,7 @@ import AdminRightBar from '../components/admin/AdminRightBar'
 AdminRightBar
 function AdminPage() {
   return (
-    <div className='admin-container flex'>
+    <div className='admin-container flex p-4'>
             <AdminLeftBar/>
             <AdminMainBar/>
             <AdminRightBar/>

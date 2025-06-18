@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-function SideBar() {
+function SideBar(props) {
   return (
     <div className='sidebar mr-4'>
     <div className='sidebar-container h-40 border border-gray rounded-md'>
@@ -12,14 +12,14 @@ function SideBar() {
        }}>
         <img src="https://i.pinimg.com/736x/ab/a0/22/aba022d6c03e679a567bfba156800080.jpg" alt="" 
         className='h-20 w-20 rounded-full mb-2 border-1 border-white shadow-sm'/>
-        <span className='text-lg'>@ Stephan Salvatore  스테판 </span>
+        <span className='text-lg'>@ {props.user_name}  스테판 </span>
        </div>
 
     </div>
-    <div className="card bg-gray-100 p-2 mt-4 h-20">
+    <div className="card bg-gray-100 p-2 mt-4 h-20 rounded-md">
       Feel free to reach out :)
     </div>
-    <div className='card bg-gray-100 h-20 mt-4 flex justify-between items-center p-2'>
+    <div className='card bg-gray-100 h-16 mt-4 flex justify-between items-center p-2 rounded-md'>
         <span>Your Contribution</span>
         <span className='text-green-600'>+ 60%</span>
 

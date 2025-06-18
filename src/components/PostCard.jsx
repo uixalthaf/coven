@@ -27,7 +27,7 @@ function PostCard(props) {
         }
     }
   return (
-    <div className='bg-gray-100 rounded-md p-4'>
+    <div className='card bg-gray-100 rounded-md p-4'>
         <div className="card-header flex justify-between">
             <div className="flex">
                 <div className="flex gap-1 items-center">
@@ -70,7 +70,7 @@ onClick={handleClick}>
             {
                 comments.map((msg,index)=>(
                     <div key={index} className='py-1'>
-                                 <span className="text-blue-400">@ Sebastian </span>{msg}
+                                 <span className="text-blue-400">@ {props.user_name} </span>{msg}
 
                     </div>
                 ))
